@@ -1,14 +1,14 @@
 # adventofcode-2017
 
-A Clojure library designed to ... well, that part is up to you.
+Primarily for me to learn closure
 
 ## Usage
 
-FIXME
+
 
 ## License
 
-Copyright © 2017 FIXME
+Copyright © 2017 Tobias Reuleaux
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
