@@ -1,6 +1,6 @@
-(ns adventofcode-2017.day1-test
+(ns adventofcode-2017.day1_1_test
   (:require [clojure.test :refer :all]
-            [adventofcode-2017.day1 :refer :all]))
+            [adventofcode-2017.day1_1 :refer :all]))
 
 
 (deftest sample-num-test-1
@@ -18,4 +18,3 @@
 (deftest sample-num-test-4
   (testing "For Input 91212129 it should be 9"
     (is (= (inverse-captcha 91212129) 9))))
-
