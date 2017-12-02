@@ -1,6 +1,6 @@
 (ns adventofcode-2017.day1-2
   (:require [adventofcode-2017.util :refer [num-to-digit-list]]
-            [adventofcode-2017.day1_1 :refer [input]]))
+            [adventofcode-2017.day1-1 :refer [input]]))
 
 (defn inverse-captcha-part-two
   [num]

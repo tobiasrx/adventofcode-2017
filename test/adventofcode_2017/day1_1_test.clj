@@ -1,6 +1,6 @@
-(ns adventofcode-2017.day1_1_test
+(ns adventofcode-2017.day1-1-test
   (:require [clojure.test :refer :all]
-            [adventofcode-2017.day1_1 :refer :all]))
+            [adventofcode-2017.day1-1 :refer :all]))
 
 
 (deftest sample-num-test-1

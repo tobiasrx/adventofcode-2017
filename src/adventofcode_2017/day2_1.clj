@@ -1,10 +1,8 @@
 (ns adventofcode-2017.day2-1
-  (:require [clojure.string :as str]))
+  (:require [adventofcode-2017.util :refer [parse-table-string]]))
 
 (defn get-checksum [table]
-    (->> (str/split table #"\n")
-         (map #(str/split % #"\t"))
-         (map (fn [rows] (map #(Integer/parseInt %) rows)))
+    (->> (parse-table-string table)
          (map (fn [rows] (- (apply max rows) (apply min rows))))
          (reduce +)))
 

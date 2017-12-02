@@ -1,4 +1,5 @@
-(ns adventofcode-2017.util)
+(ns adventofcode-2017.util
+  (:require [clojure.string :as str]))
 
 (defn num-to-digit-list
   [num]
@@ -12,3 +13,11 @@
       )
     )
   )
+
+(defn parse-table-string
+  ([table] (parse-table-string table #"\n" #"\t"))
+  ([table linebreak columnbreak]
+   (->> (str/split table linebreak)
+        (map #(str/split % columnbreak))
+        (map (fn [rows] (map #(Integer/parseInt %) rows))))
+    ))

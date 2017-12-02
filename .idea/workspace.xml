@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day2_1_test.clj" />
+    <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="Solution of first puzzle on day2">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day2_2_test.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adventofcode-2017.iml" afterPath="$PROJECT_DIR$/adventofcode-2017.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/util.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/util.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="day2_1.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj">
+      <file leaf-file-name="day2_2.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -52,12 +57,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day1.clj" />
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_test.clj" />
-        <option value="$PROJECT_DIR$/src/adventofcode_2017/util.clj" />
-        <option value="$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj" />
-        <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" />
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day2_1_test.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj" />
+        <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj" />
+        <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" />
+        <option value="$PROJECT_DIR$/test/adventofcode_2017/day2_2_test.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/util.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj" />
       </list>
     </option>
   </component>
@@ -135,7 +143,7 @@
     <property name="cursive.last.file.extension./Users/trx/IdeaProjects/adventofcode-2017/src" value="clj" />
     <property name="cursive.last.file.extension./Users/trx/IdeaProjects/adventofcode-2017/test" value="clj" />
   </component>
-  <component name="ReplState" timestamp="1512218159366">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1512220402062">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -148,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day2-1">
+  <component name="RunManager" selected="Leiningen.Test">
     <configuration name="Repl" type="ClojureREPL" factoryName="Local">
       <setting name="replType" value="1" />
       <module name="adventofcode-2017" />
@@ -243,30 +251,20 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="adventofcode-2017.day1-1" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="adventofcode-2017" />
+      <setting name="path" value="" />
+      <setting name="namespace" value="adventofcode-2017.day1-1" />
+      <setting name="useLein" value="false" />
+      <setting name="profiles" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="adventofcode-2017.day1-2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="adventofcode-2017" />
       <setting name="path" value="" />
       <setting name="namespace" value="adventofcode-2017.day1-2" />
-      <setting name="useLein" value="false" />
-      <setting name="profiles" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="adventofcode-2017.day1" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="adventofcode-2017" />
-      <setting name="path" value="" />
-      <setting name="namespace" value="adventofcode-2017.day1" />
-      <setting name="useLein" value="false" />
-      <setting name="profiles" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="adventofcode-2017.day1_1" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="adventofcode-2017" />
-      <setting name="path" value="" />
-      <setting name="namespace" value="adventofcode-2017.day1_1" />
       <setting name="useLein" value="false" />
       <setting name="profiles" value="" />
       <setting name="vmparams" value="" />
@@ -283,20 +281,42 @@
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$" />
     </configuration>
-    <list size="6">
+    <configuration name="adventofcode-2017.day2-2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="adventofcode-2017" />
+      <setting name="path" value="" />
+      <setting name="namespace" value="adventofcode-2017.day2-2" />
+      <setting name="useLein" value="false" />
+      <setting name="profiles" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="adventofcode-2017.day2_2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="adventofcode-2017" />
+      <setting name="path" value="" />
+      <setting name="namespace" value="adventofcode-2017.day2_2" />
+      <setting name="useLein" value="false" />
+      <setting name="profiles" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+    </configuration>
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Clojure REPL.Repl" />
       <item index="1" class="java.lang.String" itemvalue="Leiningen.Test" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1_1" />
-      <item index="5" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-2" />
+      <item index="5" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2_2" />
+      <item index="6" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-1" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
-        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
-        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1_1" />
-        <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-2" />
+        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
+        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
+        <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-1" />
+        <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2_2" />
       </list>
     </recent_temporary>
   </component>
@@ -319,10 +339,19 @@
       <option name="presentableId" value="Default" />
       <updated>1512119850778</updated>
     </task>
+    <task id="LOCAL-00001" summary="Solution of first puzzle on day2">
+      <created>1512218307211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512218307211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -367,9 +396,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Solution of first puzzle on day2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution of first puzzle on day2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -379,12 +412,12 @@
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1512212279746" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_2_test ...)" />
-            <marker date="1512212279746" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512212279746" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512212279746" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512212279746" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
-            <marker date="1512212279746" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+            <marker date="1512219428430" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
+            <marker date="1512219428430" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512219428430" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512219428430" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512219428430" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512219428430" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
           </folding>
         </state>
       </provider>
@@ -401,6 +434,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -419,75 +453,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/intro.md" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/util.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
           <folding>
-            <marker date="1512212279746" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_1_test ...)" />
-            <marker date="1512212279746" expanded="true" signature="128:237" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512212279746" expanded="true" signature="239:348" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512212279746" expanded="true" signature="350:459" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512212279746" expanded="true" signature="461:578" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512219391578" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-1-test ...)" />
+            <marker date="1512219391578" expanded="true" signature="128:237" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512219391578" expanded="true" signature="239:348" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512219391578" expanded="true" signature="350:459" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512219391578" expanded="true" signature="461:578" ph="(deftest sample-num-test-4 ...)" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
           <folding>
-            <marker date="1512212279746" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_2_test ...)" />
-            <marker date="1512212279746" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512212279746" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512212279746" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512212279746" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
-            <marker date="1512212279746" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+            <marker date="1512219428430" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
+            <marker date="1512219428430" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512219428430" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512219428430" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512219428430" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512219428430" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
           <folding>
-            <marker date="1512212279745" expanded="true" signature="0:79" ph="(ns adventofcode-2017.day1_1 ...)" />
-            <marker date="1512212279745" expanded="true" signature="2246:2616" ph="(defn inverse-captcha ...)" />
-            <marker date="1512212279745" expanded="true" signature="2618:2672" ph="(defn -main ...)" />
+            <marker date="1512219369039" expanded="true" signature="0:79" ph="(ns adventofcode-2017.day1-1 ...)" />
+            <marker date="1512219369039" expanded="true" signature="2246:2616" ph="(defn inverse-captcha ...)" />
+            <marker date="1512219369039" expanded="true" signature="2618:2672" ph="(defn -main ...)" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj">
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day2_2_test.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
-            <marker date="1512212279745" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
-            <marker date="1512212279745" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
-            <marker date="1512212279745" expanded="true" signature="580:643" ph="(defn -main ...)" />
+            <marker date="1512219768361" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day2-2-test ...)" />
+            <marker date="1512219768361" expanded="true" signature="127:323" ph="(deftest verify-checksum ...)" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day2_1_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <marker date="1512216196322" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day2-1-test ...)" />
             <marker date="1512216196322" expanded="true" signature="127:304" ph="(deftest verify-checksum ...)" />
@@ -495,10 +522,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="53" />
+          <folding>
+            <marker date="1512219369043" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
+            <marker date="1512219369043" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
+            <marker date="1512219369043" expanded="true" signature="580:643" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1512220273154" expanded="true" signature="0:65" ph="(ns adventofcode-2017.util ...)" />
+            <marker date="1512220273154" expanded="true" signature="67:303" ph="(defn num-to-digit-list ...)" />
+            <marker date="1512220273154" expanded="true" signature="305:557" ph="(defn parse-table-string ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <marker date="1512220335859" expanded="true" signature="0:95" ph="(ns adventofcode-2017.day2-1 ...)" />
+            <marker date="1512220335859" expanded="true" signature="97:246" ph="(defn get-checksum ...)" />
+            <marker date="1512220335859" expanded="true" signature="1659:1710" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>
