@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/util.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day1.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/adventofcode_2017/day1_test.clj" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day2_1_test.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adventofcode-2017.iml" afterPath="$PROJECT_DIR$/adventofcode-2017.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="day1_2_test.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
+      <file leaf-file-name="day2_1.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Clojure Test Namespace" />
         <option value="Clojure Namespace" />
+        <option value="Clojure Test Namespace" />
       </list>
     </option>
   </component>
@@ -58,13 +56,18 @@
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj" />
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" />
+        <option value="$PROJECT_DIR$/test/adventofcode_2017/day2_1_test.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1873" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -83,7 +86,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,13 +125,17 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="cursive.last.file.extension./Users/tr/IdeaProjects/adventofcode-2017/src" value="clj" />
     <property name="cursive.last.file.extension./Users/tr/IdeaProjects/adventofcode-2017/test" value="clj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="cursive.last.file.extension./Users/trx/IdeaProjects/adventofcode-2017/src" value="clj" />
+    <property name="cursive.last.file.extension./Users/trx/IdeaProjects/adventofcode-2017/test" value="clj" />
   </component>
-  <component name="ReplState" timestamp="1512136089873">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1512218159366">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -142,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Leiningen.Test">
+  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day2-1">
     <configuration name="Repl" type="ClojureREPL" factoryName="Local">
       <setting name="replType" value="1" />
       <module name="adventofcode-2017" />
@@ -267,20 +273,37 @@
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$" />
     </configuration>
-    <list size="5">
+    <configuration name="adventofcode-2017.day2-1" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="adventofcode-2017" />
+      <setting name="path" value="" />
+      <setting name="namespace" value="adventofcode-2017.day2-1" />
+      <setting name="useLein" value="false" />
+      <setting name="profiles" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Clojure REPL.Repl" />
       <item index="1" class="java.lang.String" itemvalue="Leiningen.Test" />
       <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1" />
       <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
       <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1_1" />
+      <item index="5" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
-        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1_1" />
-        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
+        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
+        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1_1" />
+        <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -299,37 +322,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1873" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995194" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22213247" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.273021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -352,19 +374,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.hgignore">
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1512212279746" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_2_test ...)" />
+            <marker date="1512212279746" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512212279746" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512212279746" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512212279746" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512212279746" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.hgignore" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -372,52 +401,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512119858702" expanded="true" signature="0:276" ph="(defproject adventofcode-2017 ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1/test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/core_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1/test.clj" />
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md" />
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/core.clj" />
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/core_test.clj" />
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -425,167 +419,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512136040928" expanded="true" signature="59:39555" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="98:214" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="192:214" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="771:812" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="782:812" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="858:1315" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="933:1301" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="999:1284" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1049:1262" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1387:1575" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1424:1560" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1437:1546" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1609:1689" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1730:1829" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1776:1814" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1869:2237" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1903:2222" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="1916:2208" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2270:4431" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2339:2662" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2674:4416" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2792:4370" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2810:4356" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2829:4316" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="2848:3036" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="3055:3310" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="3329:3665" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="3684:3940" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="3959:4296" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="4472:4706" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="4857:5175" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="4888:5160" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="4901:5146" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="4921:5022" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="5042:5132" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="5261:11377" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="5332:5627" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="5716:5908" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="5978:6192" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="6272:6886" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="6954:7753" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="7637:7698" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="7871:8108" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="8178:8452" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="8522:9594" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="9356:9417" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="9727:10124" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="10244:10692" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="10712:11078" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="11101:11362" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="11123:11338" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="11441:11508" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="11546:11583" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="11616:11988" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="11677:11957" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="12027:18949" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="12142:18934" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="18997:19202" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19030:19187" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19043:19173" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19252:19316" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19354:19483" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19379:19444" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="39481:39544" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19575:19912" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19637:19899" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19681:19881" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="19963:20300" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20025:20287" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20069:20269" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20352:20826" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20414:20813" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20458:20795" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20639:20778" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20902:21239" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="20964:21226" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21008:21208" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21292:21773" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21394:21760" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21431:21742" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21484:21697" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21844:22181" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21906:22168" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="21950:22150" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="22258:22599" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="22320:22586" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="22365:22568" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="22647:22984" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="22709:22971" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="22753:22953" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23034:23523" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23136:23510" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23173:23492" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23228:23447" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23600:24667" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23662:24654" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23708:24636" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="23891:24619" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="39481:39529" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="39481:39516" ph="..." />
-            <marker date="1512136040928" expanded="true" signature="39481:39498" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/intro.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/intro.md" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/util.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <marker date="1512135154158" expanded="true" signature="29:265" ph="(defn num-to-digit-list ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="52" />
+        <state relative-caret-position="30">
+          <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="50" />
           <folding>
-            <marker date="1512134986961" expanded="true" signature="0:34" ph="(ns adventofcode-2017.day1-test ...)" />
-            <marker date="1512134986961" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_1_test ...)" />
-            <marker date="1512134986961" expanded="true" signature="128:237" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512134986961" expanded="true" signature="239:348" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512134986961" expanded="true" signature="350:459" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512134986961" expanded="true" signature="461:578" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512212279746" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_1_test ...)" />
+            <marker date="1512212279746" expanded="true" signature="128:237" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512212279746" expanded="true" signature="239:348" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512212279746" expanded="true" signature="350:459" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512212279746" expanded="true" signature="461:578" ph="(deftest sample-num-test-4 ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="48" />
+          <folding>
+            <marker date="1512212279746" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1_2_test ...)" />
+            <marker date="1512212279746" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512212279746" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512212279746" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512212279746" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512212279746" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="49" />
           <folding>
-            <marker date="1512135766306" expanded="true" signature="0:79" ph="(ns adventofcode-2017.day1_1 ...)" />
-            <marker date="1512135766306" expanded="true" signature="2246:2616" ph="(defn inverse-captcha ...)" />
-            <marker date="1512135766306" expanded="true" signature="2618:2672" ph="(defn -main ...)" />
+            <marker date="1512212279745" expanded="true" signature="0:79" ph="(ns adventofcode-2017.day1_1 ...)" />
+            <marker date="1512212279745" expanded="true" signature="2246:2616" ph="(defn inverse-captcha ...)" />
+            <marker date="1512212279745" expanded="true" signature="2618:2672" ph="(defn -main ...)" />
           </folding>
         </state>
       </provider>
@@ -595,17 +477,28 @@
         <state relative-caret-position="105">
           <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
-            <marker date="1512135996012" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
-            <marker date="1512135996012" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
-            <marker date="1512135996012" expanded="true" signature="580:643" ph="(defn -main ...)" />
+            <marker date="1512212279745" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
+            <marker date="1512212279745" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
+            <marker date="1512212279745" expanded="true" signature="580:643" ph="(defn -main ...)" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day2_1_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <marker date="1512216196322" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day2-1-test ...)" />
+            <marker date="1512216196322" expanded="true" signature="127:304" ph="(deftest verify-checksum ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
