@@ -96,21 +96,41 @@
     )
   )
 
+(defn is-bottom-right
+  [pos grid]
+  (let [x (first pos)
+        y (last pos)
+        grid-size (count grid)]
+    (and (= x (dec grid-size))
+         (= y (dec grid-size))))
+  )
+
 
 (defn fill-next
   ([]
     (fill-next [start-pos start-dir start-grid]))
-  ([[pos dir grid]]
+  ([[pos dir grid last-sum]]
 
    (let [next-pos (get-pos pos dir)
          sum (sum-of-neighbors next-pos grid)]
-    (is-in-bounds next-pos grid)
-   ;  (if (is-in-bounds next-pos grid)
-   ;    [next-pos dir (set-pos next-pos (sum-of-neighbors next-pos grid) grid)]
-   ;    0
-   ;    ;(fill-next [grid pos (get-next-dir dir)])
-   ;    )
-   ;  )
+     (if (is-bottom-right pos grid)
+       (fill-next [pos dir (expand-grid grid) 0])
+       (if (is-in-bounds next-pos grid)
+         [next-pos dir (set-pos next-pos (sum-of-neighbors next-pos grid) grid) sum]
+         (fill-next [pos (get-next-dir dir) grid 0])
+         ))
+     )
    )
-    )
   )
+
+(defn fill-till-sum-greater
+  [stop]
+  (loop [fill (fill-next)]
+    (let [sum (last fill)]
+      (if (> sum stop)
+        sum
+        (recur (fill-next fill))))
+  )
+  )
+
+

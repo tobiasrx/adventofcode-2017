@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day3_2_test.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="day3_2.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,7 +146,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/trx/IdeaProjects/adventofcode-2017/test/adventofcode_2017/day3_1_test.clj" />
   </component>
-  <component name="ReplState" timestamp="1512332230039">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1512333159898">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -385,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512301731978</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="god i need to commit more often :-D almost there. i hope">
+      <created>1512332258739</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512332258739</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -450,7 +456,8 @@
     <MESSAGE value="solution of second puzzle of day2" />
     <MESSAGE value="solution of first puzzle day 3" />
     <MESSAGE value="changed to allow big ints :-)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to allow big ints :-)" />
+    <MESSAGE value="god i need to commit more often :-D almost there. i hope" />
+    <option name="LAST_COMMIT_MESSAGE" value="god i need to commit more often :-D almost there. i hope" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
