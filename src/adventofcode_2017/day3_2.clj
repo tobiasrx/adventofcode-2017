@@ -1,4 +1,6 @@
-(ns adventofcode-2017.day3-2)
+(ns adventofcode-2017.day3-2
+  (:require [adventofcode-2017.day3-1 :refer [input]]
+            ))
 
 (def start-grid [[0 0 0]
                  [0 1 0]
@@ -47,16 +49,6 @@
     (map + pos dir)
   )
 
-(defn set-pos
-  [pos value grid]
-  (let [grid-size (count grid)
-        pos-setter (fn [x y]
-                     (if (and (= x (first pos)) (= y (last pos)))
-                        value
-                       (get-value-at-pos [x y] grid)))]
-    (vec2d grid-size grid-size pos-setter))
-  )
-
 (defn is-in-bounds
   [pos grid]
   (let [x (first pos)
@@ -76,6 +68,18 @@
     (if (is-in-bounds pos grid)
       (nth (nth grid y) x)
       0)))
+
+
+(defn set-pos
+  [pos value grid]
+  (let [grid-size (count grid)
+        pos-setter (fn [x y]
+                     (if (and (= x (first pos)) (= y (last pos)))
+                        value
+                       (get-value-at-pos [x y] grid)))]
+    (vec2d grid-size grid-size pos-setter))
+  )
+
 
 (defn sum-of-neighbors
   [pos grid]
@@ -114,7 +118,7 @@
    (let [next-pos (get-pos pos dir)
          sum (sum-of-neighbors next-pos grid)]
      (if (is-bottom-right pos grid)
-       (fill-next [pos dir (expand-grid grid) 0])
+       (fill-next [(map + pos [1 1]) dir (expand-grid grid) 0])
        (if (is-in-bounds next-pos grid)
          [next-pos dir (set-pos next-pos (sum-of-neighbors next-pos grid) grid) sum]
          (fill-next [pos (get-next-dir dir) grid 0])
@@ -132,5 +136,9 @@
         (recur (fill-next fill))))
   )
   )
+
+(defn -main
+  []
+  (println (fill-till-sum-greater input)))
 
 
