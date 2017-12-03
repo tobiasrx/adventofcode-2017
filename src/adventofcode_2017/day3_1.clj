@@ -3,7 +3,8 @@
 
 (defn get-nth-square
   [num]
-  (int (math/ceil (/ (- (math/sqrt num) 1) 2))))
+  (bigint (math/ceil (/ (- (math/sqrt num) 1) 2))))
+
 
 (defn get-corner-bottom-right
   [n]
@@ -18,7 +19,7 @@
 
 (defn get-eigth-sector
      [num]
-  (int (math/floor (/ (get-distance-corner-to-num num) (get-nth-square num)))))
+  (bigint (math/floor (/ (get-distance-corner-to-num num) (get-nth-square num)))))
 
 (defn get-eight-corner
   [num]
