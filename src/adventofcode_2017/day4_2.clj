@@ -12,25 +12,21 @@
 
 (defn is-passphrase-valid
   [passphrase]
-  (loop [words (str/split passphrase #" ")
-         character-map-list []]
-    (if (empty? words)
-      true
-      (let [word-character-map (make-character-map (first words))]
-        (if (some #(= % word-character-map) character-map-list )
-          false
-          (recur (rest words) (conj character-map-list word-character-map))
-          )
-        )
-      )
-    )
+  (first (reduce (fn
+                   [[result character-map-list] word]
+                   (if (some #(= % (make-character-map word)) character-map-list)
+                     (reduced [false character-map-list])
+                     [true (conj character-map-list (make-character-map word))])) [true []] (str/split passphrase #" ")
+                 )
+         )
   )
+
+
 
 (defn get-valid-phrases
   [passphrases]
   (->> passphrases
-       (map is-passphrase-valid)
-       (filter identity)
+       (filter is-passphrase-valid)
        (count))
   )
 

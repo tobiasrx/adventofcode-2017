@@ -16,8 +16,7 @@
 (defn get-valid-phrases
   [passphrases]
   (->> passphrases
-       (map is-passphrase-valid)
-       (filter identity)
+       (filter is-passphrase-valid)
        (count))
   )
 
