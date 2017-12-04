@@ -10,13 +10,6 @@
                      [result (conj word-set word)])) [true #{}] (str/split passphrase #" ")))
   )
 
-(defn get-valid-phrases
-  [passphrases]
-  (->> passphrases
-       (filter is-passphrase-valid)
-       (count))
-  )
-
 (defn -main
   []
   (println (->> (get-lines-from-file "resources/day4_1_input.txt")
