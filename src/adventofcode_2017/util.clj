@@ -21,3 +21,8 @@
         (map #(str/split % columnbreak))
         (map (fn [rows] (map #(Integer/parseInt %) rows))))
     ))
+
+(defn get-lines-from-file
+  [filename]
+  (str/split (slurp filename) #"\n")
+  )
