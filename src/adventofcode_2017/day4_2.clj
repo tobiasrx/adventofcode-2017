@@ -22,16 +22,9 @@
          )
   )
 
-
-
-(defn get-valid-phrases
-  [passphrases]
-  (->> passphrases
-       (filter is-passphrase-valid)
-       (count))
-  )
-
 (defn -main
   []
-  (println (get-valid-phrases (get-lines-from-file "resources/day4_1_input.txt")))
+  (println (->> (get-lines-from-file "resources/day4_1_input.txt")
+                (filter is-passphrase-valid)
+                (count)))
   )
