@@ -14,9 +14,10 @@
   [passphrase]
   (first (reduce (fn
                    [[result character-map-list] word]
-                   (if (some #(= % (make-character-map word)) character-map-list)
-                     (reduced [false character-map-list])
-                     [true (conj character-map-list (make-character-map word))])) [true []] (str/split passphrase #" ")
+                   (let [character-map (make-character-map word)]
+                     (if (some #(= % character-map) character-map-list)
+                       (reduced [false character-map-list])
+                       [true (conj character-map-list character-map)]))) [true []] (str/split passphrase #" ")
                  )
          )
   )

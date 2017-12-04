@@ -10,7 +10,6 @@
                      [result (conj word-set word)])) [true #{}] (str/split passphrase #" ")))
   )
 
-
 (defn get-valid-phrases
   [passphrases]
   (->> passphrases
