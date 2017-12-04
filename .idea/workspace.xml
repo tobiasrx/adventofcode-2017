@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="day3_2.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
+      <file leaf-file-name="day4_1.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,7 +56,6 @@
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj" />
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj" />
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day2_2_test.clj" />
-        <option value="$PROJECT_DIR$/src/adventofcode_2017/util.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
@@ -63,6 +63,11 @@
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day3_1.clj" />
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day3_2_test.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj" />
+        <option value="$PROJECT_DIR$/test/adventofcode_2017/day4_1_test.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/util.clj" />
+        <option value="$PROJECT_DIR$/test/adventofcode_2017/day4_2_test.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/day4_2.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj" />
       </list>
     </option>
   </component>
@@ -104,6 +109,11 @@
             <path>
               <item name="adventofcode-2017" type="b2602c69:ProjectViewProjectNode" />
               <item name="adventofcode-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventofcode-2017" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventofcode-2017" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -127,10 +137,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,7 +155,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/trx/IdeaProjects/adventofcode-2017/test/adventofcode_2017/day3_1_test.clj" />
   </component>
-  <component name="ReplState" timestamp="1512334165361">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(find-nth-square 1024)&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/find-nth-square 1024)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/find-nth-square 1024\n                                          )&quot;, :offset 89, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-corner-bottom-right 16)&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-distance-corner-to-num 1024)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eigth-distance 1024)&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-nth-square 1024)&quot;, :offset 45, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eight-corner 1024)&quot;, :offset 47, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 1024)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 1)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 12)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 23)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-nth-square input)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-nth-square adventofcode-2017.day3-1/input)&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(require [clojure.math.numeric-tower :as math])&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(require '[clojure.math.numeric-tower :as math])&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(math/sqrt adventofcode-2017.day3-1/input)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-corner-bottom-right 263)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-distance-corner-to-num adventofcode-2017.day3-1/input)&quot;, :offset 83, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eight-corner adventofcode-2017.day3-1/input)&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eigth-sector adventofcode-2017.day3-1/input)&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(mod (0.0) 2)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 2)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 3)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 4)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 123123123123)&quot;, :offset 54, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 123123123123123123123123123123)&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 123123123123123123123123123123123123123123123123)&quot;, :offset 90, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/fill-next adventofcode-2017.day3-1/start_grid)&quot;, :offset 71, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/fill-next adventofcode-2017.day3-2/start_grid\n                                    )&quot;, :offset 108, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/dirs)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/start-grid)&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;adventofcode-2017.day3-2/start-grid&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;adventofcode-2017.day3-2/dirs&quot;, :offset 29, :ns &quot;user&quot;} {:command &quot;(.indexOf dirs dir-up)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(.indexOf adventofcode-2017.day3-2/dirs adventofcode-2017.day3-2/dir-up)&quot;, :offset 65, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/get-next-dir adventofcode-2017.day3-2/start-dir)&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(map + [1 1] [2 2])&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/get-next-pos adventofcode-2017.day3-2/start-pos adventofcode-2017.day3-2/start-dir)&quot;, :offset 108, :ns &quot;user&quot;} {:command &quot;(get-next-dir)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid start-pos)&quot;, :offset 38, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid (get-next-pos start-pos start-dir))&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(nth [1 2] 3)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(expand-grid start-grid init-new-grid)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(expand-grid start-grid\n             )&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(init-new-grid 0 0 start-grid)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(nth (nth start-grid 0) 0)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(init-new-grid 1 1 start-grid)&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid [1 1])&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid [0 0])&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid [-1 -1])&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(expand-grid start-grid)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 0] start-gr)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 0] start-grid)&quot;, :offset 34, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 0] start-grid\n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [0 0] start-grid\n                  \n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 1] start-grid\n                  \n                  \n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [2 1] start-grid\n                  \n                  \n                  \n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(set-pos [0 0] 3 start-grid)&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(set-pos [1 0] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [1 2] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [1 1] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [0 1] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [2 1] 2 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(fill-next)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(fill-next (fill-next))&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(fill-next (fill-next (fill-next)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(fill-next [])&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(use 'adventofcode-2017.day3-2)&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 1)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 4)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 6)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 11)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 23)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 25)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 25\n                       )&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 26\n                       \n                       )&quot;, :offset 49, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1512404680622">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123\n                                        \n                                        \n                                        )&quot;, :offset 166, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123\n                                        )&quot;, :offset 84, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123\n                                        \n                                        )&quot;, :offset 125, :ns &quot;user&quot;} {:command &quot;(num-to-list)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/num-to-list 123)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/num-to-digit-\n  list 123)&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/num-to-digit-list 123)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 122)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 1221)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 1221\n                                        )&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha-second-part 1212)&quot;, :offset 56, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha-second-part 1221)&quot;, :offset 56, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha-second-part 123425)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(contains? [2 3 4] 1)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(contains? [2 3 4] 4) &quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(def m {})&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;m&quot;, :offset 1, :ns &quot;user&quot;} {:command &quot;(conj m {3 3})&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(def m2 (conj m {3 3}))&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(conj m2 {4 4})&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(make-character-map \&quot;test\&quot;)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(make-character-map \&quot;testasd\&quot;)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(= {\\t 1 \\a 2} {\\a 2 \\t 1})&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(= {\\t 1 \\a 2} {\\a 3 \\t 1})&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(first \&quot;word\&quot;)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(use 'adventofcode-2017.day4-2)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(is-passphrase-valid \&quot;abcde fghij\&quot;)&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(is-passphrase-valid \&quot;abcde xyz ecdab\&quot;)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(conj {} (is-passphrase-valid \&quot;abcde xyz ecdab\&quot;))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(+ {\\a 1} {\\a 1 \\b 2})&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(conj {\\a 1} {\\a 1 \\b 2})&quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(conj [] (is-passphrase-valid \&quot;abcde xyz ecdab\&quot;))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(= {\\a 1, \\b 1, \\c 1, \\d 1, \\e 1} {\\e 1, \\c 1, \\d 1, \\a 1, \\b 1})&quot;, :offset 65, :ns &quot;user&quot;} {:command &quot;(= {\\a 1, \\b 1, \\c 1, \\d 1, \\e 1} {\\x 1, \\y 1, \\z 1})&quot;, :offset 53, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -158,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day3-2">
+  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day4-1">
     <configuration name="Repl" type="ClojureREPL" factoryName="Local">
       <setting name="replType" value="1" />
       <module name="adventofcode-2017" />
@@ -253,26 +263,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="adventofcode-2017.day1-2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="adventofcode-2017" />
-      <setting name="path" value="" />
-      <setting name="namespace" value="adventofcode-2017.day1-2" />
-      <setting name="useLein" value="false" />
-      <setting name="profiles" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="adventofcode-2017.day2-1" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="adventofcode-2017" />
-      <setting name="path" value="" />
-      <setting name="namespace" value="adventofcode-2017.day2-1" />
-      <setting name="useLein" value="false" />
-      <setting name="profiles" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration name="adventofcode-2017.day2-2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="adventofcode-2017" />
       <setting name="path" value="" />
@@ -303,22 +293,42 @@
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="adventofcode-2017.day4-1" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="adventofcode-2017" />
+      <setting name="path" value="" />
+      <setting name="namespace" value="adventofcode-2017.day4-1" />
+      <setting name="useLein" value="false" />
+      <setting name="profiles" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="adventofcode-2017.day4-2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="adventofcode-2017" />
+      <setting name="path" value="" />
+      <setting name="namespace" value="adventofcode-2017.day4-2" />
+      <setting name="useLein" value="false" />
+      <setting name="profiles" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+    </configuration>
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Clojure REPL.Repl" />
       <item index="1" class="java.lang.String" itemvalue="Leiningen.Test" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-2" />
-      <item index="5" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-1" />
-      <item index="6" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-2" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-2" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-1" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-2" />
+      <item index="5" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day4-1" />
+      <item index="6" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day4-2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-2" />
-        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-1" />
-        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-2" />
-        <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-1" />
-        <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day1-2" />
+        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day4-1" />
+        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day4-2" />
+        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-2" />
+        <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day3-1" />
+        <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day2-2" />
       </list>
     </recent_temporary>
   </component>
@@ -397,14 +407,56 @@
       <option name="project" value="LOCAL" />
       <updated>1512333175374</updated>
     </task>
-    <task id="LOCAL-00009" summary="Got it! omg wrote no tests but still got it :D">
-      <created>1512333754868</created>
+    <task id="LOCAL-00009" summary="Solution of day4 puzzle 1">
+      <created>1512397353248</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1512333754868</updated>
+      <updated>1512397353248</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="solutions for day4 puzzle 2">
+      <created>1512402113868</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1512402113868</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactored, replaced function with reduce, other function with some">
+      <created>1512403622305</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1512403622305</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactored, replaced functions with reduce, other function with some">
+      <created>1512404180700</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1512404180700</updated>
+    </task>
+    <task id="LOCAL-00013" summary="reduce all the things!">
+      <created>1512404477205</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1512404477205</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor">
+      <created>1512404553357</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1512404553357</updated>
+    </task>
+    <task id="LOCAL-00015" summary="cleaned up more">
+      <created>1512404652309</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1512404652309</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -417,36 +469,58 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="0" y="23" width="1873" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.50186867" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33360258" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.247557" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40523225" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.49813133" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20274636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21335505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33360258" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21335505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247557" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20274636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -470,8 +544,14 @@
     <MESSAGE value="changed to allow big ints :-)" />
     <MESSAGE value="god i need to commit more often :-D almost there. i hope" />
     <MESSAGE value="i can smell it. we are not far" />
-    <MESSAGE value="Got it! omg wrote no tests but still got it :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got it! omg wrote no tests but still got it :D" />
+    <MESSAGE value="Solution of day4 puzzle 1" />
+    <MESSAGE value="solutions for day4 puzzle 2" />
+    <MESSAGE value="refactored, replaced function with reduce, other function with some" />
+    <MESSAGE value="refactored, replaced functions with reduce, other function with some" />
+    <MESSAGE value="reduce all the things!" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="cleaned up more" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -480,11 +560,135 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1512391097156" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
+            <marker date="1512391097156" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512391097156" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512391097156" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512391097156" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512391097156" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.hgignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1/test.clj" />
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md" />
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/core.clj" />
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/core_test.clj" />
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/intro.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <marker date="1512391946015" expanded="true" signature="0:65" ph="(ns adventofcode-2017.util ...)" />
+            <marker date="1512391946015" expanded="true" signature="67:303" ph="(defn num-to-digit-list ...)" />
+            <marker date="1512391946015" expanded="true" signature="305:557" ph="(defn parse-table-string ...)" />
+            <marker date="1512391946015" expanded="true" signature="559:638" ph="(defn get-lines-from-file ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_1_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <marker date="1512391097153" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
+            <marker date="1512391097153" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
+            <marker date="1512391097153" expanded="true" signature="580:643" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1512391097156" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
+            <marker date="1512391097156" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512391097156" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512391097156" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512391097156" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512391097156" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -492,6 +696,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -499,6 +704,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1512391097156" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
+            <marker date="1512391097156" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512391097156" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512391097156" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512391097156" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512391097156" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,27 +748,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/util.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1512391097156" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
+            <marker date="1512391097156" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
+            <marker date="1512391097156" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
+            <marker date="1512391097156" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
+            <marker date="1512391097156" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
+            <marker date="1512391097156" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -563,20 +771,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,6 +779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,24 +790,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day3_1_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day3_2_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_1.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,13 +802,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="63" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="2" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-739">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day3_2_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512391097157" expanded="true" signature="0:74" ph="(ns adventofcode-2017.day3-2-test ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day3_1_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <marker date="1512391097156" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day3-1-test ...)" />
+            <marker date="1512391097156" expanded="true" signature="127:250" ph="(deftest verify-steps-for-access-port ...)" />
+            <marker date="1512391097156" expanded="true" signature="252:356" ph="(deftest verify-steps-for-12 ...)" />
+            <marker date="1512391097156" expanded="true" signature="358:462" ph="(deftest verify-steps-for-23 ...)" />
+            <marker date="1512391097156" expanded="true" signature="464:576" ph="(deftest verify-steps-for-1024 ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <marker date="1512391097153" expanded="true" signature="0:95" ph="(ns adventofcode-2017.day2-1 ...)" />
+            <marker date="1512391097153" expanded="true" signature="97:246" ph="(defn get-checksum ...)" />
+            <marker date="1512391097153" expanded="true" signature="1659:1710" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/day4_1_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day1_2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="62" />
+          <folding>
+            <marker date="1512391097153" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
+            <marker date="1512391097153" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
+            <marker date="1512391097153" expanded="true" signature="580:643" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <marker date="1512391946015" expanded="true" signature="0:65" ph="(ns adventofcode-2017.util ...)" />
+            <marker date="1512391946015" expanded="true" signature="67:303" ph="(defn num-to-digit-list ...)" />
+            <marker date="1512391946015" expanded="true" signature="305:557" ph="(defn parse-table-string ...)" />
+            <marker date="1512391946015" expanded="true" signature="559:638" ph="(defn get-lines-from-file ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day4_1_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="50" />
+          <folding>
+            <marker date="1512391333665" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day4-1-test ...)" />
+            <marker date="1512391333665" expanded="true" signature="127:243" ph="(deftest verify-sample-passphrase-1 ...)" />
+            <marker date="1512391333665" expanded="true" signature="245:367" ph="(deftest verify-sample-passphrase-2 ...)" />
+            <marker date="1512391333665" expanded="true" signature="369:486" ph="(deftest verify-sample-passphrase-3 ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day4_2_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <marker date="1512402022301" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day4-2-test ...)" />
+            <marker date="1512402022301" expanded="true" signature="127:240" ph="(deftest verify-sample-passphrase-1 ...)" />
+            <marker date="1512402022301" expanded="true" signature="242:365" ph="(deftest verify-sample-passphrase-2 ...)" />
+            <marker date="1512402022301" expanded="true" signature="367:489" ph="(deftest verify-sample-passphrase-3 ...)" />
+            <marker date="1512402022301" expanded="true" signature="491:617" ph="(deftest verify-sample-passphrase-4 ...)" />
+            <marker date="1512402022301" expanded="true" signature="619:746" ph="(deftest verify-sample-passphrase-2 ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <marker date="1512404618943" expanded="true" signature="0:134" ph="(ns adventofcode-2017.day4-2 ...)" />
+            <marker date="1512404618943" expanded="true" signature="136:429" ph="(defn make-character-map ...)" />
+            <marker date="1512404618943" expanded="true" signature="431:889" ph="(defn is-passphrase-valid ...)" />
+            <marker date="1512404618943" expanded="true" signature="891:1049" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
