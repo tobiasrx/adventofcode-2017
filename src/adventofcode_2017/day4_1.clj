@@ -4,14 +4,12 @@
 
 (defn is-passphrase-valid
   [passphrase]
-      (loop [words (str/split passphrase #" ")
-           word-set #{}]
-        (if (empty? words)
-          true
-          (if (contains? word-set (first words))
-            false
-            (recur (rest words) (conj word-set (first words))))))
-    )
+  (first (reduce (fn [[result word-set] word]
+                   (if (contains? word-set word)
+                     (reduced [false word-set])
+                     [result (conj word-set word)])) [true #{}] (str/split passphrase #" ")))
+  )
+
 
 (defn get-valid-phrases
   [passphrases]
