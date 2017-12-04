@@ -4,7 +4,6 @@
     <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day4_2.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day4_2.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/adventofcode_2017/day4_2_test.clj" afterPath="$PROJECT_DIR$/test/adventofcode_2017/day4_2_test.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="day4_2.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_2.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+            <state relative-caret-position="254">
+              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -156,7 +155,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/trx/IdeaProjects/adventofcode-2017/test/adventofcode_2017/day3_1_test.clj" />
   </component>
-  <component name="ReplState" timestamp="1512402096564">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1512403602734">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123\n                                        \n                                        \n                                        )&quot;, :offset 166, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123\n                                        )&quot;, :offset 84, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123\n                                        \n                                        )&quot;, :offset 125, :ns &quot;user&quot;} {:command &quot;(num-to-list)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/num-to-list 123)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/num-to-digit-\n  list 123)&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/num-to-digit-list 123)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 123)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 122)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 1221)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha 1221\n                                        )&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha-second-part 1212)&quot;, :offset 56, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha-second-part 1221)&quot;, :offset 56, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day1/inverse-captcha-second-part 123425)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(contains? [2 3 4] 1)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(contains? [2 3 4] 4) &quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(def m {})&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;m&quot;, :offset 1, :ns &quot;user&quot;} {:command &quot;(conj m {3 3})&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(def m2 (conj m {3 3}))&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(conj m2 {4 4})&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(make-character-map \&quot;test\&quot;)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(make-character-map \&quot;testasd\&quot;)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(= {\\t 1 \\a 2} {\\a 2 \\t 1})&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(= {\\t 1 \\a 2} {\\a 3 \\t 1})&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(first \&quot;word\&quot;)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(use 'adventofcode-2017.day4-2)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(is-passphrase-valid \&quot;abcde fghij\&quot;)&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(is-passphrase-valid \&quot;abcde xyz ecdab\&quot;)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(conj {} (is-passphrase-valid \&quot;abcde xyz ecdab\&quot;))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(+ {\\a 1} {\\a 1 \\b 2})&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(conj {\\a 1} {\\a 1 \\b 2})&quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(conj [] (is-passphrase-valid \&quot;abcde xyz ecdab\&quot;))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(= {\\a 1, \\b 1, \\c 1, \\d 1, \\e 1} {\\e 1, \\c 1, \\d 1, \\a 1, \\b 1})&quot;, :offset 65, :ns &quot;user&quot;} {:command &quot;(= {\\a 1, \\b 1, \\c 1, \\d 1, \\e 1} {\\x 1, \\y 1, \\z 1})&quot;, :offset 53, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -169,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day4-2">
+  <component name="RunManager" selected="Leiningen.Test">
     <configuration name="Repl" type="ClojureREPL" factoryName="Local">
       <setting name="replType" value="1" />
       <module name="adventofcode-2017" />
@@ -415,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512397353248</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="solutions for day4 puzzle 2">
+      <created>1512402113868</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1512402113868</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -439,7 +445,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.50186867" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40523225" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.49813133" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.49813133" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -504,7 +510,8 @@
     <MESSAGE value="god i need to commit more often :-D almost there. i hope" />
     <MESSAGE value="i can smell it. we are not far" />
     <MESSAGE value="Solution of day4 puzzle 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution of day4 puzzle 1" />
+    <MESSAGE value="solutions for day4 puzzle 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="solutions for day4 puzzle 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -844,19 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <marker date="1512392348623" expanded="true" signature="0:135" ph="(ns adventofcode-2017.day4-1 ...)" />
-            <marker date="1512392348623" expanded="true" signature="137:430" ph="(defn is-passphrase-valid ...)" />
-            <marker date="1512392348623" expanded="true" signature="432:568" ph="(defn get-valid-phrases ...)" />
-            <marker date="1512392348623" expanded="true" signature="570:673" ph="(defn -main ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day4_1_test.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -885,10 +879,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <marker date="1512392348623" expanded="true" signature="0:135" ph="(ns adventofcode-2017.day4-1 ...)" />
+            <marker date="1512392348623" expanded="true" signature="137:430" ph="(defn is-passphrase-valid ...)" />
+            <marker date="1512392348623" expanded="true" signature="432:568" ph="(defn get-valid-phrases ...)" />
+            <marker date="1512392348623" expanded="true" signature="570:673" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day4_2.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        <state relative-caret-position="254">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding />
         </state>
       </provider>
