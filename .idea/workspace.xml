@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="day3_2.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-739">
-              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -90,9 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,6 +128,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +145,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/trx/IdeaProjects/adventofcode-2017/test/adventofcode_2017/day3_1_test.clj" />
   </component>
-  <component name="ReplState" timestamp="1512333729456">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1512334165361">{:repl-history {:ide [], :local [{:command &quot;(-&gt; \&quot;String\&quot;)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(str/split % #\&quot;t\&quot;)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(require [clojure.string :as str])&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(-&gt; \&quot;String\&quot; (#(clojure.string/split % #\&quot;t\&quot;)))&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(-&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(--&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(-&gt;&gt; [\&quot;1 2 3\&quot;] (map #(clojure.string/split % #\&quot; \&quot;)))&quot;, :offset 3, :ns &quot;user&quot;} {:command &quot;(sum 1 2 3)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(sum [1 2 3])&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(map #(* %1 %2) [1 2 3] (range))&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]\n        y [1 2 3]]\n  (println x))&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(doseq [x [1 2 3]] (println x))&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(find-nth-square 1024)&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/find-nth-square 1024)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/find-nth-square 1024\n                                          )&quot;, :offset 89, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-corner-bottom-right 16)&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-distance-corner-to-num 1024)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eigth-distance 1024)&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-nth-square 1024)&quot;, :offset 45, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eight-corner 1024)&quot;, :offset 47, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 1024)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 1)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 12)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 23)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-nth-square input)&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-nth-square adventofcode-2017.day3-1/input)&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(require [clojure.math.numeric-tower :as math])&quot;, :offset 46, :ns &quot;user&quot;} {:command &quot;(require '[clojure.math.numeric-tower :as math])&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(math/sqrt adventofcode-2017.day3-1/input)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-corner-bottom-right 263)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-distance-corner-to-num adventofcode-2017.day3-1/input)&quot;, :offset 83, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eight-corner adventofcode-2017.day3-1/input)&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/get-eigth-sector adventofcode-2017.day3-1/input)&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(mod (0.0) 2)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 2)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 3)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 4)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 123123123123)&quot;, :offset 54, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 123123123123123123123123123123)&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-1/calculate-steps 123123123123123123123123123123123123123123123123)&quot;, :offset 90, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/fill-next adventofcode-2017.day3-1/start_grid)&quot;, :offset 71, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/fill-next adventofcode-2017.day3-2/start_grid\n                                    )&quot;, :offset 108, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/dirs)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/start-grid)&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;adventofcode-2017.day3-2/start-grid&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;adventofcode-2017.day3-2/dirs&quot;, :offset 29, :ns &quot;user&quot;} {:command &quot;(.indexOf dirs dir-up)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(.indexOf adventofcode-2017.day3-2/dirs adventofcode-2017.day3-2/dir-up)&quot;, :offset 65, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/get-next-dir adventofcode-2017.day3-2/start-dir)&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(map + [1 1] [2 2])&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(adventofcode-2017.day3-2/get-next-pos adventofcode-2017.day3-2/start-pos adventofcode-2017.day3-2/start-dir)&quot;, :offset 108, :ns &quot;user&quot;} {:command &quot;(get-next-dir)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid start-pos)&quot;, :offset 38, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid (get-next-pos start-pos start-dir))&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(nth [1 2] 3)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(expand-grid start-grid init-new-grid)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(expand-grid start-grid\n             )&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(init-new-grid 0 0 start-grid)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(nth (nth start-grid 0) 0)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(init-new-grid 1 1 start-grid)&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid [1 1])&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid [0 0])&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(get-value-at-pos start-grid [-1 -1])&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(expand-grid start-grid)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 0] start-gr)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 0] start-grid)&quot;, :offset 34, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 0] start-grid\n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [0 0] start-grid\n                  \n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [1 1] start-grid\n                  \n                  \n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(sum-of-neighbors [2 1] start-grid\n                  \n                  \n                  \n                  )&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(set-pos [0 0] 3 start-grid)&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(set-pos [1 0] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [1 2] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [1 1] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [0 1] 3 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(set-pos [2 1] 2 start-grid)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;(fill-next)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(fill-next (fill-next))&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(fill-next (fill-next (fill-next)))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(fill-next [])&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(use 'adventofcode-2017.day3-2)&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 1)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 4)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 6)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 11)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 23)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 25)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 25\n                       )&quot;, :offset 49, :ns &quot;user&quot;} {:command &quot;(fill-till-sum-greater 26\n                       \n                       )&quot;, :offset 49, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -398,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512333175374</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Got it! omg wrote no tests but still got it :D">
+      <created>1512333754868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1512333754868</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -411,7 +417,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -420,14 +426,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33360258" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247557" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33360258" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.247557" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20274636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20274636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -464,7 +470,8 @@
     <MESSAGE value="changed to allow big ints :-)" />
     <MESSAGE value="god i need to commit more often :-D almost there. i hope" />
     <MESSAGE value="i can smell it. we are not far" />
-    <option name="LAST_COMMIT_MESSAGE" value="i can smell it. we are not far" />
+    <MESSAGE value="Got it! omg wrote no tests but still got it :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got it! omg wrote no tests but still got it :D" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -473,16 +480,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <marker date="1512230337334" expanded="true" signature="0:149" ph="(ns adventofcode-2017.day2-2 ...)" />
-            <marker date="1512230337334" expanded="true" signature="152:685" ph="(defn evenly-divisible ...)" />
-            <marker date="1512230337334" expanded="true" signature="686:839" ph="(defn get-evenly-divisible-checksum ...)" />
-            <marker date="1512230337334" expanded="true" signature="841:909" ph="(defn -main ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,14 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1512219428430" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
-            <marker date="1512219428430" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512219428430" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512219428430" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512219428430" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
-            <marker date="1512219428430" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -534,13 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <marker date="1512219391578" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-1-test ...)" />
-            <marker date="1512219391578" expanded="true" signature="128:237" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512219391578" expanded="true" signature="239:348" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512219391578" expanded="true" signature="350:459" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512219391578" expanded="true" signature="461:578" ph="(deftest sample-num-test-4 ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,14 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding>
-            <marker date="1512219428430" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day1-2-test ...)" />
-            <marker date="1512219428430" expanded="true" signature="127:245" ph="(deftest sample-num-test-1 ...)" />
-            <marker date="1512219428430" expanded="true" signature="247:365" ph="(deftest sample-num-test-2 ...)" />
-            <marker date="1512219428430" expanded="true" signature="367:489" ph="(deftest sample-num-test-3 ...)" />
-            <marker date="1512219428430" expanded="true" signature="491:615" ph="(deftest sample-num-test-4 ...)" />
-            <marker date="1512219428430" expanded="true" signature="617:743" ph="(deftest sample-num-test-5 ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,10 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <marker date="1512220335859" expanded="true" signature="0:95" ph="(ns adventofcode-2017.day2-1 ...)" />
-            <marker date="1512220335859" expanded="true" signature="97:246" ph="(defn get-checksum ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,11 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1512220273154" expanded="true" signature="0:65" ph="(ns adventofcode-2017.util ...)" />
-            <marker date="1512220273154" expanded="true" signature="67:303" ph="(defn num-to-digit-list ...)" />
-            <marker date="1512220273154" expanded="true" signature="305:557" ph="(defn parse-table-string ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -586,9 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1512216196322" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day2-1-test ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,11 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <marker date="1512219369039" expanded="true" signature="0:79" ph="(ns adventofcode-2017.day1-1 ...)" />
-            <marker date="1512219369039" expanded="true" signature="2246:2616" ph="(defn inverse-captcha ...)" />
-            <marker date="1512219369039" expanded="true" signature="2618:2672" ph="(defn -main ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,11 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="53" />
-          <folding>
-            <marker date="1512219369043" expanded="true" signature="0:148" ph="(ns adventofcode-2017.day1-2 ...)" />
-            <marker date="1512219369043" expanded="true" signature="150:578" ph="(defn inverse-captcha-part-two ...)" />
-            <marker date="1512219369043" expanded="true" signature="580:643" ph="(defn -main ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,9 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-          <folding>
-            <marker date="1512297251635" expanded="true" signature="0:334" ph="(defproject adventofcode-2017 ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,10 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="64" />
-          <folding>
-            <marker date="1512219768361" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day2-2-test ...)" />
-            <marker date="1512219768361" expanded="true" signature="127:323" ph="(deftest verify-checksum ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,13 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <marker date="1512299392301" expanded="true" signature="0:125" ph="(ns adventofcode-2017.day3-1-test ...)" />
-            <marker date="1512299392301" expanded="true" signature="127:250" ph="(deftest verify-steps-for-access-port ...)" />
-            <marker date="1512299392301" expanded="true" signature="252:356" ph="(deftest verify-steps-for-12 ...)" />
-            <marker date="1512299392301" expanded="true" signature="358:462" ph="(deftest verify-steps-for-23 ...)" />
-            <marker date="1512299392301" expanded="true" signature="464:576" ph="(deftest verify-steps-for-1024 ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512323134609" expanded="true" signature="0:74" ph="(ns adventofcode-2017.day3-2-test ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,17 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <marker date="1512301692065" expanded="true" signature="0:80" ph="(ns adventofcode-2017.day3-1 ...)" />
-            <marker date="1512301692065" expanded="true" signature="82:162" ph="(defn get-nth-square ...)" />
-            <marker date="1512301692065" expanded="true" signature="165:229" ph="(defn get-corner-bottom-right ...)" />
-            <marker date="1512301692065" expanded="true" signature="231:396" ph="(defn get-distance-corner-to-num ...)" />
-            <marker date="1512301692065" expanded="true" signature="398:514" ph="(defn get-eigth-sector ...)" />
-            <marker date="1512301692065" expanded="true" signature="516:648" ph="(defn get-eight-corner ...)" />
-            <marker date="1512301692065" expanded="true" signature="650:722" ph="(defn distance-to-eigth-corner ...)" />
-            <marker date="1512301692065" expanded="true" signature="724:975" ph="(defn calculate-steps ...)" />
-            <marker date="1512301692065" expanded="true" signature="997:1050" ph="(defn -main ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,19 +619,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="63" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="2" selection-end-column="63" />
-          <folding>
-            <marker date="1512230337334" expanded="true" signature="0:149" ph="(ns adventofcode-2017.day2-2 ...)" />
-            <marker date="1512230337334" expanded="true" signature="152:685" ph="(defn evenly-divisible ...)" />
-            <marker date="1512230337334" expanded="true" signature="686:839" ph="(defn get-evenly-divisible-checksum ...)" />
-            <marker date="1512230337334" expanded="true" signature="841:909" ph="(defn -main ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day3_2.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-739">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
