@@ -6,13 +6,12 @@
 (defn solve
   [input]
   (loop [input input
-         iter-set #{input}
          iter-map {}
          steps 0]
     (let [iter (next-iteration input)]
-      (if (contains? iter-set iter)
+      (if (contains? iter-map iter)
         (- steps (get iter-map iter))
-        (recur iter (conj iter-set iter) (assoc iter-map iter steps) (inc steps))
+        (recur iter (assoc iter-map iter steps) (inc steps))
         )
       )
     )
