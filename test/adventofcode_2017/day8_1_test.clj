@@ -6,4 +6,8 @@
 
 (deftest verify-solution
   (testing "Verify solution"
-    (is (= (solve input) 1))))
+    (is (= (solve input)) 1)))
+
+(deftest verify-solution2
+  (testing "Verify solution2"
+    (is (= (last (solve input)) 10))))

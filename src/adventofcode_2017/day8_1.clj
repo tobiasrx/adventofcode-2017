@@ -41,15 +41,20 @@
 (defn apply-instructions
   [lines]
   (loop [lines lines
-         register {}]
+         register {}
+         max-val 0]
     (if (empty? lines)
-      register
-      (let [[operation condition] (str/split (first lines) #" if ")]
-        (recur (rest lines) (load-string (str/replace (str "(if " (transform-condition condition) " " (transform-operation operation) " " register ")") "#register" (str register)))))))
+      [register max-val]
+      (let [[operation condition] (str/split (first lines) #" if ")
+            register (load-string (str/replace (str "(if " (transform-condition condition) " " (transform-operation operation) " " register ")") "#register" (str register)))]
+        (recur (rest lines) register (max max-val (if (empty? register) 0 (apply max (vals register)))))))
+    )
   )
+
 (defn solve
   [input]
-  (apply max (vals (apply-instructions (str/split input #"\n"))))
+  (let [[register max-val] (apply-instructions (str/split input #"\n"))]
+    [(apply max (vals register)) max-val])
   )
 
 (defn -main
