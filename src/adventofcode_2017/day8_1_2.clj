@@ -1,4 +1,4 @@
-(ns adventofcode-2017.day8-1
+(ns adventofcode-2017.day8-1-2
   (:require [adventofcode-2017.util :refer :all])
   (:require [clojure.string :as str]))
 
