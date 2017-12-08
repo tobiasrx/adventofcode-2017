@@ -1,6 +1,5 @@
 (ns adventofcode-2017.day7-1-test
   (:require [clojure.test :refer :all])
-  (:require [adventofcode-2017.util :refer :all])
   (:require [adventofcode-2017.day7-1 :refer :all]))
 
 (deftest verify-solution

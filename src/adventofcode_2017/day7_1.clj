@@ -3,11 +3,7 @@
   (:require [clojure.string :as str]))
 
 
-(def tree {})
-
-(def tree-leaf {:weight 0 :parent nil})
-
-(def input [])
+(def input "resources/day7_1_input.txt")
 
 (defn loop-children
   [tree children parent]
@@ -52,7 +48,7 @@
 
 (defn parse-input [input]
   (loop [input input
-         tree tree]
+         tree {}]
     (if (empty? input)
       tree
       (let [
@@ -63,7 +59,8 @@
                        (map str/trim (str/split children-string #","))
                        )
             [value weight-braced] (str/split leaf-weight #" ")
-            weight (subs weight-braced 1 (dec (count weight-braced)))
+            weight-string (subs weight-braced 1 (dec (count weight-braced)))
+            weight (Integer/parseInt weight-string)
             ]
         (recur (rest input) (assoc tree value {:weight weight :children children})))
       )
@@ -75,5 +72,5 @@
   )
 
 (defn -main []
-  (println (solve "resources/day7_1_input.txt"))
+  (println (solve input))
   )
