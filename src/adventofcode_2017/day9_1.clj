@@ -10,11 +10,11 @@
 
 (defn get-score
   [input]
-  (last (reduce (fn [[stack result] char]
+  (last (reduce (fn [[level result] char]
                   (if (= char \{)
-                    [(conj stack 1) result]
-                    [(drop 1 stack) (+ result (reduce + 0 stack))]
-                    )) ['() 0] input
+                    [(inc level) result]
+                    [(dec level) (+ result level)]
+                    )) [0 0] input
                 ))
   )
 
