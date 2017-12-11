@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day11_2.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="day11_2.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day11_2.clj">
+      <file leaf-file-name="day10_1.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="270">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -78,16 +78,16 @@
         <option value="$PROJECT_DIR$/test/adventofcode_2017/day9_1_test.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day9_2.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day9_1.clj" />
-        <option value="$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj" />
         <option value="$PROJECT_DIR$/resources/day11_input.txt" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day11_1.clj" />
         <option value="$PROJECT_DIR$/src/adventofcode_2017/day11_2.clj" />
+        <option value="$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="147" />
-    <option name="y" value="46" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="9" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
   </component>
@@ -183,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day11-2">
+  <component name="RunManager" selected="Clojure Application.adventofcode-2017.day10-1">
     <configuration name="Repl" type="ClojureREPL" factoryName="Local">
       <setting name="replType" value="1" />
       <module name="adventofcode-2017" />
@@ -339,9 +339,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day11-2" />
-        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day11-1" />
-        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day10-1" />
+        <item index="0" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day10-1" />
+        <item index="1" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day11-2" />
+        <item index="2" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day11-1" />
         <item index="3" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day9-1" />
         <item index="4" class="java.lang.String" itemvalue="Clojure Application.adventofcode-2017.day9-2" />
       </list>
@@ -506,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513023925572</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="solution of part 2 day 11">
+      <created>1513024475270</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1513024475270</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -519,7 +526,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="9" y="23" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -529,8 +536,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.247557" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27221325" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247557" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27221325" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247557" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -585,7 +592,8 @@
     <MESSAGE value="solution of second part day 9" />
     <MESSAGE value="only counting..." />
     <MESSAGE value="solution of day 11 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution of day 11 part 1" />
+    <MESSAGE value="solution of part 2 day 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution of part 2 day 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -859,18 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <marker date="1512940647255" expanded="true" signature="0:68" ph="(ns adventofcode-2017.day10-1 ...)" />
-            <marker date="1512940647255" expanded="true" signature="163:1469" ph="(defn solve ...)" />
-            <marker date="1512940647255" expanded="true" signature="1471:1514" ph="(defn -main ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/day11_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -948,8 +944,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day11_2.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <marker date="1513024735787" expanded="true" signature="0:123" ph="(ns adventofcode-2017.day11-2 ...)" />
+            <marker date="1513024735787" expanded="true" signature="125:391" ph="(defn solve ...)" />
+            <marker date="1513024735787" expanded="true" signature="393:486" ph="(defn -main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day10_1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
       </provider>
