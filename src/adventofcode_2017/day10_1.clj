@@ -19,7 +19,7 @@
                                  )
                            )
                      (inc skip-size)
-                     (mod (+ offset (+ length skip-size)) list-length)
+                     (mod (+ offset length skip-size) list-length)
                      ] )
                   )
         ]
