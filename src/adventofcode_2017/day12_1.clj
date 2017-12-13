@@ -58,7 +58,20 @@
 (defn solve
   [input]
   (let [graph (build-graph input)]
-    (count (filter (fn [el] (first el)) (map (fn [node] (connected? graph node 0)) (nodes graph))))
+    (loop [nodes (nodes graph)
+           result 0]
+      (if (empty? nodes)
+        result
+        (let [[connected visited] (connected? graph (first nodes) 0)]
+          (recur (set/difference nodes visited) (+ result (if connected
+                                                            (count visited)
+                                                            0
+                                                            )
+                                                   )
+                 )
+          )
+        )
+      )
     )
   )
 
@@ -81,5 +94,5 @@
 
 (defn -main
   []
-  (println (solve2 (slurp "resources/day12_input.txt")))
+  (println (solve (slurp "resources/day12_input.txt")))
   )

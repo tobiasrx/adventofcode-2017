@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="removed unnecessary braces">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/day12_input.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day12_1.clj" />
+    <list default="true" id="ca36e418-84b0-41d7-abef-0c9231715694" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adventofcode-2017.iml" afterPath="$PROJECT_DIR$/adventofcode-2017.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adventofcode_2017/day12_1.clj" afterPath="$PROJECT_DIR$/src/adventofcode_2017/day12_1.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="day12_1.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day12_1.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="367">
+              <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -532,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513025308046</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="day12 part 1 and 2, needs cleanup and speed improvements">
+      <created>1513185020623</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1513185020623</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -614,7 +619,8 @@
     <MESSAGE value="solution of part 2 day 11" />
     <MESSAGE value="solution of part 1 day 10" />
     <MESSAGE value="removed unnecessary braces" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary braces" />
+    <MESSAGE value="day12 part 1 and 2, needs cleanup and speed improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="day12 part 1 and 2, needs cleanup and speed improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -623,13 +629,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day2_2.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/adventofcode_2017/day1_2_test.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -923,13 +922,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="711">
           <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/set$difference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <marker date="1511974064533" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1511974064533" expanded="false" signature="131:286" ph="..." />
+            <marker date="1511974064533" expanded="true" signature="525:532" ph="{}" />
+            <marker date="1511974064533" expanded="true" signature="605:911" ph="{...}" />
+            <marker date="1511974064533" expanded="true" signature="979:1208" ph="{...}" />
+            <marker date="1511974064533" expanded="true" signature="1270:1943" ph="{...}" />
+            <marker date="1511974064533" expanded="true" signature="1996:2158" ph="{...}" />
+            <marker date="1511974064533" expanded="true" signature="2209:2290" ph="{...}" />
+            <marker date="1511974064533" expanded="true" signature="2330:2429" ph="{...}" />
+            <marker date="1511974064533" expanded="false" signature="2464:2475" ph=" { " />
+            <marker date="1511974064533" expanded="false" signature="2484:2490" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/adventofcode_2017/day12_1.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="367">
+          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
           <folding />
         </state>
       </provider>
