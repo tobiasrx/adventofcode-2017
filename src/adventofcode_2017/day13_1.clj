@@ -2,8 +2,8 @@
   (:require [clojure.string :as str]))
 
 (defn caught?
-  ([[step range]]
-   (caught? [step range] 0))
+  ([step-range]
+   (caught? step-range 0))
   ([[step range] delay]
    (= 0 (mod (+ step delay) (- (* 2 range) 2))      )
     )
@@ -45,5 +45,5 @@
 
 (defn -main
   []
-  (println (solve2 (slurp "resources/day13_input.txt")))
+  (println (solve (slurp "resources/day13_input.txt")))
   )

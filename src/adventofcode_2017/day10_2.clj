@@ -33,14 +33,13 @@
   [input]
   (->> input
        (sparse-hash 64)
-       ;(dense-hash)
-       ;(map (fn [num] (format "%02X" num)))
-       ;(str/join "")
-       ;(str/lower-case)
+       (dense-hash)
+       (map (fn [num] (format "%02x" num)))
+       (str/join "")
        )
   )
 
 (defn -main
   []
-  (println (knot-hash (vec (map int "1,2,3"))))
+  (println (knot-hash (vec (map int ""))))
   )
