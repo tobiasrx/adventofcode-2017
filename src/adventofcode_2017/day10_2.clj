@@ -3,7 +3,6 @@
   (:require [clojure.string :as str]))
 
 (def suffix [17 31 73 47 23])
-(def input2 (into (mapv int input) suffix))
 
 (defn sparse-hash
   [rounds length-sequence]
@@ -28,7 +27,7 @@
 
 (defn knot-hash
   [input]
-  (->> input
+  (->> (into (mapv int input) suffix)
        (sparse-hash 64)
        (dense-hash)
        (map (fn [num] (format "%02x" num)))
@@ -37,5 +36,5 @@
   )
 (defn -main
   []
-  (println (knot-hash input2))
+  (println (knot-hash input))
   )
