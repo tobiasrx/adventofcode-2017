@@ -7,6 +7,7 @@
 (defn sparse-hash
   [rounds input]
   (let [length-sequence (into input suffix)]
+    length-sequence
     (loop [rounds rounds
            sparse-hash nil
            skip-size 0
@@ -14,7 +15,8 @@
       (if (= 0 rounds)
         sparse-hash
         (let [[sparse-hash skip-size offset] (knot-hash-round length-sequence skip-size offset)]
-          (recur (dec rounds) sparse-hash skip-size offset))
+          (recur (dec rounds) sparse-hash skip-size offset)
+          )
         )
       )
     )
@@ -22,11 +24,7 @@
 
 (defn dense-hash
   [input]
-  (loop [result []
-         input input]
-    (if (empty? input)
-      result
-      (recur (conj result (apply bit-xor (take 16 input))) (drop 16 input))))
+  (reduce (fn [result p] (conj result (apply bit-xor p))) [] (partition 16 input))
   )
 
 (defn knot-hash

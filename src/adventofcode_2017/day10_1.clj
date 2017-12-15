@@ -26,8 +26,8 @@
                                          (reverse (take-from-offset offset length current-list))
                                          (take-from-offset (mod (+ offset length) list-length) (- list-length length) current-list)
                                          )
-                          shift  (- list-length offset)]
-                      (concat (drop shift reduced-list) (take shift reduced-list))
+                          ]
+                      (concat (take-last offset reduced-list) (take (- list-length offset) reduced-list))
                       )
                     (inc skip-size)
                     (mod (+ offset length skip-size) list-length)
