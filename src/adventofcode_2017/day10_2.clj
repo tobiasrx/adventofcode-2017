@@ -3,20 +3,19 @@
   (:require [clojure.string :as str]))
 
 (def suffix [17 31 73 47 23])
+(def input2 (into (mapv int input) suffix))
 
 (defn sparse-hash
-  [rounds input]
-  (let [length-sequence (into input suffix)]
-    length-sequence
-    (loop [rounds rounds
-           sparse-hash nil
-           skip-size 0
-           offset 0]
-      (if (= 0 rounds)
-        sparse-hash
-        (let [[sparse-hash skip-size offset] (knot-hash-round length-sequence skip-size offset)]
-          (recur (dec rounds) sparse-hash skip-size offset)
-          )
+  [rounds length-sequence]
+  (loop [rounds rounds
+         current-list (range 0 256)
+         skip-size 0
+         offset 0
+         ]
+    (if (= 0 rounds)
+      current-list
+      (let [[sparse-hash skip-size offset] (knot-hash-round length-sequence skip-size offset current-list)]
+        (recur (dec rounds) sparse-hash skip-size offset)
         )
       )
     )
@@ -36,8 +35,7 @@
        (str/join "")
        )
   )
-
 (defn -main
   []
-  (println (knot-hash (vec (map int ""))))
+  (println (knot-hash input2))
   )
