@@ -26,3 +26,18 @@
   [filename]
   (str/split (slurp filename) #"\n")
   )
+
+(defn shift-right
+  [seq n]
+  (let [seq-count (count seq)
+        nmod (mod n seq-count)]
+    (vec (concat (take-last nmod seq) (take (- seq-count nmod) seq))))
+  )
+
+(defn swap
+  [seq x y]
+  (let [vx (nth seq x)
+        vy (nth seq y)]
+    (assoc (assoc seq x vy) y vx)
+    )
+  )
